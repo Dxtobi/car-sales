@@ -27,7 +27,9 @@
     };
 
     const toggleSidebar = () => {
+        console.log('-------')
         isSidebarOpen = !isSidebarOpen;
+        showMobileSidebar=!showMobileSidebar
     };
 
     $effect(() => {
@@ -64,7 +66,7 @@
 
 <!-- Main Layout -->
 <div class="flex h-screen relative">
-        <button class="md:hidden p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700 mr-2 fixed top-[10%]" onclick={toggleSidebar} aria-label="Menu">
+        <button class="md:hidden p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700 mr-2 fixed top-[5%]" onclick={toggleSidebar} aria-label="Menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5h12M4 12h16M4 19h8" color="#000" />
             </svg>
@@ -82,7 +84,7 @@
                         font-bold transition-all
                         
                         ${currentPath === link.href || (link.match === 'start' && currentPath.startsWith(link.href)) 
-                            ? 'bg-blue-500 px-[10%] ' 
+                            ? 'bg-blue-500 px-[10%]  text-white' 
                             : ''}
                     `}
                 >
@@ -105,7 +107,7 @@
                     font-bold transition-all
                     
                     ${currentPath === link.href || (link.match === 'start' && currentPath.startsWith(link.href)) 
-                        ? 'bg-blue-500 px-[10%] ' 
+                        ? 'bg-blue-500 px-[10%] text-white' 
                         : ''}
                 `}
             >
