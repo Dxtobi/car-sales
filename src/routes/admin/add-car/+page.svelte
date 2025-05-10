@@ -11,7 +11,9 @@
       transmission: 'Automatic',
       category: 'sedan',
       image: '',
-      badge: ''
+      badge: '',
+      noOfSeats:0
+
     };
   
     let imageFile = null;
@@ -178,6 +180,15 @@
           type="text"
           bind:value={car.badge}
           placeholder="e.g. Certified Pre-Owned"
+          class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+        />
+      </div>
+      <div class="col-span-1">
+        <label class="block text-sm font-medium text-gray-700 mb-2">Number of sits</label>
+        <input
+          type="number"
+          bind:value={car.noOfSeats}
+          placeholder="e.g. 4"
           class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
         />
       </div>

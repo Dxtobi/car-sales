@@ -1,33 +1,34 @@
 <script>
 	import '../app.css';
-	
+	import 'iconify-icon';
 	let { children } = $props();
 	const profile_links = [
       {platform:'instagram', link:'https://www.instagram.com/sarkinmota_cars/'},
       {link:'https://x.com/SarkinMota_AMF', platform:'x'},
       {link:'https://www.facebook.com/sarkinmotacars', platform:'facebook'}
     ]
+  
 </script>
 
 <svelte:head>
 	<!-- Meta Tags -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Sarkin Mota Auto - Your trusted partner in finding the perfect vehicle to match your lifestyle and budget. Explore our wide range of SUVs, Sedans, Luxury Cars, Electric Vehicles, and more." />
-	<meta name="keywords" content="Sarkin Mota Auto, Car Sales, SUVs, Sedans, Luxury Cars, Electric Vehicles, Hybrid Cars, Sports Cars, Car Financing, Sell Your Car" />
-	<meta name="author" content="Sarkin Mota Auto" />
+	<meta name="description" content="Your Company Name Here - Your trusted partner in finding the perfect vehicle to match your lifestyle and budget. Explore our wide range of SUVs, Sedans, Luxury Cars, Electric Vehicles, and more." />
+	<meta name="keywords" content="Your Company Name Here, Car Sales, SUVs, Sedans, Luxury Cars, Electric Vehicles, Hybrid Cars, Sports Cars, Car Financing, Sell Your Car" />
+	<meta name="author" content="Your Company Name Here" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Sarkin Mota Auto - Find Your Dream Car" />
+	<meta property="og:title" content="Your Company Name Here - Find Your Dream Car" />
 	<meta property="og:description" content="Explore our wide range of vehicles and find the perfect car for your lifestyle and budget." />
 	<meta property="og:image" content="/benz.jpeg" />
 	<meta property="og:url" content="https://www.example.com" />
-	<meta property="og:site_name" content="Sarkin Mota Auto" />
+	<meta property="og:site_name" content="Your Company Name Here" />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Sarkin Mota Auto - Find Your Dream Car" />
+	<meta name="twitter:title" content="Your Company Name Here - Find Your Dream Car" />
 	<meta name="twitter:description" content="Explore our wide range of vehicles and find the perfect car for your lifestyle and budget." />
 	<meta name="twitter:image" content="/benz.jpeg" />
 	<meta name="twitter:site" content="@SarkinMota_AMF" />
@@ -76,7 +77,7 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Company Info -->
         <div>
-          <h3 class="font-bold text-xl mb-4">Sarkin Mota Auto</h3>
+          <h3 class="font-bold text-xl mb-4">Your Company Name Here</h3>
           <p class="text-gray-400 mb-4">Your trusted partner in finding the perfect vehicle to match your lifestyle and budget.</p>
           <div class="flex gap-4 text-white">
             {#each profile_links as profile}
@@ -172,7 +173,7 @@
     <div class="bg-gray-950 py-6">
       <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div class="text-gray-400 text-sm mb-4 md:mb-0">
-          © 2025 Sarkin Mota Auto. All rights reserved.
+          © 2025 Your Company Name Here. All rights reserved.
         </div>
         
         <div class="flex space-x-6">

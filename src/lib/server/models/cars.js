@@ -5,6 +5,7 @@ const carSchema = new mongoose.Schema({
   year: Number,
   salePrice: Number,
   mileage: Number,
+  noOfSeats:Number,
   category: String,
   image: String,
   transmission:String,

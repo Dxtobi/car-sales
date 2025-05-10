@@ -66,11 +66,11 @@
 
 <!-- Main Layout -->
 <div class="flex h-screen relative">
-        <button class="md:hidden p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700 mr-2 fixed top-[5%]" onclick={toggleSidebar} aria-label="Menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5h12M4 12h16M4 19h8" color="#000" />
-            </svg>
-        </button>
+    <button class="md:hidden p-2 rounded-md text-gray-500 hover:bg-gray-100 hover:text-gray-700 mr-2 fixed top-[5%]" onclick={toggleSidebar} aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5h12M4 12h16M4 19h8" color="#000" />
+        </svg>
+    </button>
    
      <!-- Sidebar (Desktop) -->
      <aside class="hidden md:flex flex-col w-64 bg-white border-r border-gray-200 shadow-sm p-5">
